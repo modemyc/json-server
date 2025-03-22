@@ -1,0 +1,12 @@
+.form {
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 24px 32px 24px 32px;
+    max-width: 500px;
+}
+
+.form > * {
+    margin-bottom: 24px;
+}
+
