@@ -3,6 +3,8 @@
 @import '../components/button/button.css';
 @import '../components/form/form.css';
 @import '../components/form/input.css';
+@import '../components/result/result.css';
+@import '../components/desk/desk.css';
 
 :root {
     --white: #ffffff;

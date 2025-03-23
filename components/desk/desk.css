@@ -1,0 +1,6 @@
+.desk {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    grid-gap:24px;
+}
