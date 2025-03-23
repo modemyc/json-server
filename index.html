@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/scripts/fetchPosts.js" defer></script>
+    <script src="/scripts/fetchPush.js" defer></script>
     <link rel="stylesheet" href="/assets/main.css">
     <title>JavaScript запросы постов с сервера</title>
 </head>
@@ -17,6 +18,7 @@
         <main class="page__main">
             <div class="container">
                 <div class="desk">
+                    <!-- Форма для получения поста по ID -->
                     <form class="form load-post-form">
                         <h2 class="form__title">Поиск по ID</h2>
                         <div class="input">
@@ -29,6 +31,26 @@
                             Загрузить
                         </button>
                     </form>
+                    <!-- Форма для загрузки поста на "сервер" -->
+                    <form class="form upload-post-form">
+                        <h2 class="form__title">Создание поста</h2>
+                        <div class="input">
+                            <label class="input__text" for="push-text">Текст поста</label>
+                            <div class="input__field">
+                                <input id="push-text" name="title" type="text" class="input__input" placeholder="Ведите текст">
+                            </div>
+                        </div>
+                        <div class="input">
+                            <label class="input__text" for="push-id">Введите идентификатор</label>
+                            <div class="input__field">
+                                <input id="push-id" name="id" type="number" class="input__input" placeholder="Номер идентификатора" value="3">
+                            </div>
+                        </div>
+                        <button class="button button_primary" type="submit">
+                            Загрузить пост на сервер
+                        </button>
+                    </form>
+                    <!-- Окно результата -->
                     <div class="result"></div>
                 </div>
                 

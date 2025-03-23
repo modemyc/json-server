@@ -2,7 +2,7 @@ const loadForm = document.querySelector('.load-post-form');
 const postIdElement = document.querySelector('#post-id');
 const resultField = document.querySelector('.result');
 
-// старт json server npx json-server db.json5
+// старт json server: npx json-server db.json5
 
 loadForm.addEventListener('submit', (event) => {
     event.preventDefault();
