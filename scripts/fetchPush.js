@@ -6,13 +6,14 @@ createPostForm.addEventListener('submit', (event) => {
     const formData = new FormData(createPostForm);
     const formDataObject = Object.fromEntries(formData);
 
-    fetch('http://localhost:3000/posts', {
+    fetch ('http://localhost:3000/posts', {
         method: 'post',
         body: JSON.stringify({
             ...formDataObject,
             views: 0,
         })
     })
+    
     .then((response) => {
         console.log(response);
 
@@ -20,6 +21,8 @@ createPostForm.addEventListener('submit', (event) => {
     })
 
     .then((json) => {
-        console.log('json:', json)
+        console.log('json:', json);
+
+        resultField.innerHTML = 'Форма успешно загружена!';
     })
 })
